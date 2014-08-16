@@ -1,0 +1,41 @@
+<div id="body">
+<h1>Task Manager</h1>
+<div id="container"></div>
+<div id='TextBoxesGroup' class="row show-grid">
+	<form class="form-inline">
+	    <div class="form-group">
+			<input type='text' id="quantum" class="form-control">
+			<input type='text' id="time" class="form-control" placeholder="time">
+			<br/>
+			<input type='text' id='rafaga' class="form-control" placeholder="Rafaga">
+			<input type='text' id='entra' class="form-control" placeholder="Entra">	
+		</div>
+	</form>
+</div>
+<div id="buttons">
+		<!--<input type='button' value='Round Robin	' id='runRobin'>
+		<input type='button' value='Add Button' id='addButton'>
+		<input type='button' value='Remove Button' id='removeButton'>-->
+		<input type='button' value='Add Task' onclick='addTask()'>
+		<input type='button' value='Round Robin' onclick='sendAjax()'>
+		<input type='button' value='SJF' onclick='sendSJF()'>
+	</div>
+<table border="1" id="taskList">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>RAFAGA</th>
+      <th>ENTRA</th>
+    </tr>
+  </thead>
+  <tbody>
+
+  </tbody>
+</table>
+<div id="table_Container">
+<table id='response'>
+	<tr></tr>
+</table>
+</div>
+</div>
+<div id="proccess"></div>
